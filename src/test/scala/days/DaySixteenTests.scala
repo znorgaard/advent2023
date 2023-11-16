@@ -2,7 +2,7 @@ package days
 
 import org.scalatest.funsuite.AnyFunSuite
 
-class DayOneTests extends AnyFunSuite {
+class DaySixteenTests extends AnyFunSuite {
 
   // First test
   test("first test")(pending)

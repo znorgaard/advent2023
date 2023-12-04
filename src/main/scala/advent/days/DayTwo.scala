@@ -1,6 +1,5 @@
 package advent.days
 
-import java.awt.GridBagConstraints
 import scala.io.{BufferedSource, Source}
 
 object DayTwo {

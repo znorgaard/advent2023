@@ -1,5 +1,6 @@
 package advent.days
 
+import scala.annotation.tailrec
 import scala.io.{BufferedSource, Source}
 
 object DayFour {
@@ -43,6 +44,7 @@ object DayFour {
             if (indexSet contains index) currentCount + currentCardCount else currentCount
         }
 
+    @tailrec
     def countCards(cards: Seq[Seq[Seq[Int]]], counts: Seq[Int]): Int =
         val newCounts = addCards(cards.head, counts)
         if (cards.tail.isEmpty) newCounts.sum else countCards(cards.tail, newCounts)

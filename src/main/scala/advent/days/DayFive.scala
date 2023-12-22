@@ -68,11 +68,9 @@ object DayFive {
             }
             numbers = numbers :+ ranges
         }
-        println("Text Processed")
         val seedGroups = seeds.grouped(2).toSeq
         seedGroups.map(
           seedPair =>
-            println("Analyzing seedpair " + seedPair.head.toString + ":" + seedPair.last.toString)
             val seedRange = seedPair.head to seedPair.head + seedPair.last - 1
             var seedCount = 0
             seedRange.map(
